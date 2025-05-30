@@ -152,3 +152,4 @@ Este recomandat să folosești un mediu virtual pentru a izola dependențele pro
   - Dacă efectuezi o manevră „drag la stânga” și eliberezi, imaginea va pierde din luminozitate și va rămâne așa.
 - **Observație:** Dacă există dificultăți cu tratarea evenimentelor de mouse, se acceptă și două slidere (luminozitate/contrast) plus un buton „aplică”.
 - **Există un buton pentru salvarea imaginii modificate în fișier.**
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force

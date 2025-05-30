@@ -21,7 +21,7 @@ Această aplicație Python îți permite să ajustezi interactiv luminozitatea �
 - Încarcă o imagine și o afișează într-o fereastră.
 - Ajustează luminozitatea prin tragerea mouse-ului stânga/dreapta.
 - Ajustează contrastul prin tragerea mouse-ului sus/jos.
-- Salvează imaginea modificată apăsând tasta **s**.
+- Salvează imaginea modificată apăsând butonul **SAVE**.
 - Iese din aplicație apăsând tasta **ESC**.
 - Mesaje clare în consolă pentru feedback și erori.
 
@@ -34,7 +34,7 @@ Această aplicație Python îți permite să ajustezi interactiv luminozitatea �
   - Mișcarea orizontală modifică luminozitatea.
   - Mișcarea verticală modifică contrastul.
 - Imaginea se actualizează în timp real pe măsură ce tragi.
-- Salvarea se face apăsând tasta **s**, care salvează imaginea modificată pe disc.
+- Salvarea se face apăsând butonului **SAVE**, care salvează imaginea modificată pe disc.
 
 ---
 

@@ -97,10 +97,11 @@ Este recomandat să folosești un mediu virtual pentru a izola dependențele pro
     .\venv\Scripts\Activate.ps1
     ```
 
-    > Dacă întâmpini probleme de permisiuni, rulează:
+    > Dacă întâmpini probleme de permisiuni, rulați această comandă pentru a permite temporar scripturi pentru sesiunea 
+   > curentă:
 
     ```powershell
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
     ```
 
 5. Instalează dependențele:
@@ -152,5 +153,3 @@ Este recomandat să folosești un mediu virtual pentru a izola dependențele pro
   - Dacă efectuezi o manevră „drag la stânga” și eliberezi, imaginea va pierde din luminozitate și va rămâne așa.
 - **Observație:** Dacă există dificultăți cu tratarea evenimentelor de mouse, se acceptă și două slidere (luminozitate/contrast) plus un buton „aplică”.
 - **Există un buton pentru salvarea imaginii modificate în fișier.**
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
-Run this command to temporarily allow scripts for the current session:

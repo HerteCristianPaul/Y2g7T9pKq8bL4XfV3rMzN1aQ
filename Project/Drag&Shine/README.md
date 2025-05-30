@@ -70,7 +70,7 @@ Este recomandat să folosești un mediu virtual pentru a izola dependențele pro
 5. Instalează dependențele:
 
     ```bash
-    pip install opencv-python numpy colorama
+    pip install -r requirements.txt
     ```
 
 6. Rulează programul:
@@ -107,7 +107,7 @@ Este recomandat să folosești un mediu virtual pentru a izola dependențele pro
 5. Instalează dependențele:
 
     ```powershell
-    pip install opencv-python numpy colorama
+    pip install -r .\requirements.txt
     ```
 
 6. Rulează programul:

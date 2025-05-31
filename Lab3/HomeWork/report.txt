@@ -26,3 +26,7 @@
 %      semnificative. Valori prea mici pentru theta duceau la multe alarme
 %      false, iar valori prea mari ignorau schimbările relevante.
 %      Cele mai potrivite valori găsite: aplha(0.99) & theta(0.12)
+
+Pentru a vedea toate implementările complete și tot ce ține de materia PI,
+acestea sunt disponibile la:
+🔗 https://github.com/HerteCristianPaul/Y2g7T9pKq8bL4XfV3rMzN1aQ.

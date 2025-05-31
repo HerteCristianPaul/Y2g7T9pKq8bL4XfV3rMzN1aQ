@@ -1,0 +1,55 @@
+%% --- LABORATOR 4 ---
+
+% 1. Testati cele doua script-uri exemplu in Matlab sau Octave.
+% 2. Verificati functionarea. Evaluati distributia determinata de script-ul
+%      "Histogram" si efectul corector din "Histogram_Equalization".
+% 3. Aplicati transformarile pentru toate cele trei imagini (bay, brain, moon).
+% 4. Degradati intentionat una din imagini folosind metode de la tema "point
+%      operations" (contrast/luminozitate). Aplicati din nou transformarile pe
+%      baza de histograma.
+%  Rezultatul temei este un text in care descrieti constatarile voastre
+%    obtinute ca urmare a parcurgerii temei.
+
+% -----------------------------------------------------------------------------
+
+% ! In OCTAVE script-ul Histogram.m nu functioneaza out of the box. Necesitati:
+%     - install in OCTAVE (Command Window) 'pkg install -forge image'
+%     - add 'pkg load image' before 'imhist' || 'histeq' usage
+
+% 1. Am testat cele două scripturi în OCTAVE. Ambele funcționează corect:
+%      primul script face egalizarea histogramei, iar al doilea afișează
+%      histograma imaginii originale.
+% 2. Scriptul „Histogram” ilustrează modul în care pixelii imaginii sunt
+%      distribuiți pe nivele de gri, scoțând în evidență zonele în care valorile
+%      se aglomerează într-un interval limitat. Acest lucru oferă o imagine
+%      clară asupra contrastului general: dacă valorile sunt concentrate într-o
+%      zonă restrânsă, contrastul este slab, iar detaliile pot fi mai greu de
+%      distins.
+%    Scriptul „Histogram_Equalization” prelucrează valorile pixelilor și le
+%      redistribuie astfel încât histograma imaginii să fie întinsă uniform pe
+%      tot intervalul 0–255. Prin această transformare, contrastul imaginii
+%      crește vizibil: detaliile devin mai clare, zonele închise și deschise
+%      sunt mai bine evidențiate, iar imaginea capătă un aspect mai echilibrat
+%      și mai ușor de interpretat. Practic, egalizarea histogramei „întinde”
+%      tonurile de gri, astfel încât informația vizuală să fie mai bine
+%      răspândită și mai ușor de perceput.
+% 3. Pentru toate cele trei imagini (bay, brain, moon), scriptul încarcă
+%      fiecare, aplică egalizarea histogramei cu histeq, apoi afișează și
+%      salvează imaginile originale și corectate împreună cu histogramele lor
+%      pentru a evalua efectul transformării.
+% 4. RULAREA SCRIPTULUI SUPRASCRIE INAGINEA 'brain.jpg' CU O VERSIUNE MODIFICATA
+%    FACETI BACKUP pentru 'brain.jpg'
+%    Pentru a evalua efectele transformărilor pe bază de histogramă în situații
+%      în care o imagine este degradată intenționat, am ales să modific imaginea
+%      „brain.jpg” aplicând o degradare artificială. În jumătatea stângă a
+%      imaginii, am folosit o scalare a contrastului printr-un gradient liniar,
+%      care crește progresiv intensitatea pixelilor de la stânga la dreapta.
+%      După aceste degradări, am aplicat din nou egalizarea histogramei asupra
+%      imaginii afectate. Rezultatele au arătat că, deși transformările de tip
+%      histogram equalization pot îmbunătăți contrastul general și pot „întinde”
+%      intervalul dinamic al imaginii, ele nu pot anula complet efectele unor
+%      degradări severe sau locale, cum sunt variațiile abrupte de contrast.
+
+% Pentru a vedea toate implementările complete și tot ce ține de materia PI,
+%   acestea sunt disponibile la:
+%   https://github.com/HerteCristianPaul/Y2g7T9pKq8bL4XfV3rMzN1aQ.

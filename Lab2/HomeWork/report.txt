@@ -1,0 +1,29 @@
+%% --- LABORATOR 2 ---
+% 1. Verificati functionarea algoritmului de detectie defecte prin comparatie.
+% 2. Incercati functionarea cu o translatie diferita de cea corecta (adica 10,10).
+% 3. Incercati sa folositi imaginea pcb.png (care nu e cropped) pentru
+%       comparatie. Deoarece e de altă dimensiune, folosiți doar o porțiune din
+%       imagine (stânga-sus, dreapta, jos, etc) cu dimensiunea corectă.
+% 4.  Raspunsul este un fisier TXT care contine o descriere personala de cateva
+%       fraze a constatarilor voastre pe subiect.
+
+--------------------------------------------------------------------------------
+
+1. Am rulat algoritmul cu o translație de 10 pixeli. Defectele din imagine sunt
+    acum vizibile clar, fără zgomot sau erori. Se pare că diferențele dintre
+    imagini sunt evidențiate perfect, iar zonele cu probleme apar aliniate
+    corect în imaginea finală.
+2. Am modificat translația din (10,10) pe alte valori (50, 50), cauzând o
+    nealiniere a imaginilor. Din această cauză, diferențele detectate sunt mai
+    mari și mai zgomotoase, iar defectele nu se mai disting clar în rezultat.
+3. Pentru a compara imaginea completă pcb.png (care nu este cropped) cu imaginea
+    defectă, am folosit o porțiune din imaginea completă cu aceeași dimensiune
+    ca imaginea defectă. Am calculat diferențele de dimensiune (hDiff și wDiff)
+    și am extras o zonă de interes din pcb.png, pornind de la
+    (hDiff + 1, wDiff + 1) până la dimensiunile dorite (dH, dW). Astfel, am
+    selectat o porțiune specifică din pcb.png (de exemplu, dreapta-jos) pentru
+    comparație.
+
+Pentru a vedea toate implementările complete și tot ce ține de materia PI,
+acestea sunt disponibile la:
+🔗 https://github.com/HerteCristianPaul/Y2g7T9pKq8bL4XfV3rMzN1aQ.
